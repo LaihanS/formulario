@@ -1,0 +1,53 @@
+<form method="POST" action="/search" class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+
+{{#if hasuser}}
+
+{{#each user as |usua|}}
+
+<section class="container">
+	<div class="row">
+		<h3 class="center-align">{{usua.nombre}}</h3>
+		<div>
+			<div>
+				<div class="d-flex justify-content-center mb-4">
+					<img src="{{usua.imagepath}}"
+						class="rounded-circle" alt="example placeholder" style="width: 200px;" />
+				</div>
+			</div>
+
+			<article class="col s6 offset-s3">
+				
+					<div class="input-field">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="nom">{{usua.nombre}}</label>
+						<input id="nom" type="text" name="name"   disabled>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="correo">{{usua.email}}</label>
+						<input id="correo" type="email" name="mail" disabled>
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix">phone</i>
+						<label for="movil">{{usua.telefono}}</label>
+						<input id="movil" type="text" name="telefono"  disabled>
+					</div>
+
+			</article>
+		</div>
+</section>
+
+{{/each}}
+
+{{else}}
+
+<h1 class="card-title">
+  No hay usuarios míop D:
+</h1>
+
+{{/if}}

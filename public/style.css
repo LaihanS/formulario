@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgb(49, 40, 40) url('http://www.jmcamarket.com/materialize/img/marketylogo.png');
+	background-size: cover;
+	font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
+		'Lucida Grande', sans-serif, aclonica;
+	font-size: 14px;
+	color: white;
+}
+
+.h3 {
+	font-family: 'aclonica';
+	font-size: 120px;
+	color: orange;
+}
+
+.enviar{
+	color: aliceblue;
+	background: rgb(79, 145, 84);
+}
+
+#table tfoot {
+    display: table-header-group;
+}
+.dataTables_filter, .dataTables_info {
+  display: none;
+}
+#table thead.buscador-contacto {
+  margin-bottom:20rem;
+}
+#table thead.buscador-contacto tr th:nth-child(2) {
+  text-align:right;
+  vertical-align:middle;
+  color:#3e8ed5;
+}
+#table .dt-filter-text input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: solid 1px #ccc;
+}
+#table .dt-filter-select select{
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: solid 1px #ccc;
+}
+#table tbody{
+  padding:0 20px;
+  background:#fff;
+  box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.3);
+}
+#table tr.header-tabla-contacto {
+    vertical-align: middle !important;
+    border: 0px solid #ddd ;
+}
+#table tr.header-tabla-contacto th{
+    text-align:center;
+}
+
+
+

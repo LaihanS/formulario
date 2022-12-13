@@ -1,0 +1,49 @@
+<main>
+<section class="container">
+	<div class="row">
+		<h3 class="center-align">Estudiante</h3>
+		<div>
+			<div>
+				<div class="d-flex justify-content-center mb-4">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgjLuO8KPCL2kH89KtvYvbfkZjlkxshCjZw&usqp=CAU"
+						class="rounded-circle" alt="example placeholder" style="width: 200px;" />
+				</div>
+			</div>
+
+			<article class="col s6 offset-s3">
+
+				<form method="POST"  enctype="multipart/form-data" action="/registrar">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}" />
+					<div class="input-field">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="nom">Nombre</label>
+						<input id="nom" type="text" name="name" value=""  required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="correo">Email</label>
+						<input id="correo" type="email" name="mail" required>
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix">phone</i>
+						<label for="movil">Telefono</label>
+						<input id="movil" type="text" name="telefono"  required>
+					</div>
+
+					<div class="mb-3">
+						<label for="formFile" class="form-label">Introduzca su foto</label>
+						<input class="form-control" type="file" name="imagePath" id="formFile">
+					</div>
+
+					<p class="center-align">
+						<button class="waves-effect waves-light btn enviar" type="submit"><i
+								class="material-icons right">send</i>enviar</button>
+					</p>
+
+				</form>
+
+			</article>
+		</div>
+</section>
+</main>
